@@ -1,0 +1,21 @@
+### [CLASSIC] POST without error
+POST http://localhost:8081/api/classic
+Content-Type: application/json
+
+{
+  "name": "test",
+  "email": "test@test.com",
+  "phoneNumber": "123456789",
+  "birthDate": "2000-01-01"
+}
+
+### [CLASSIC] POST with error - birthDate
+POST http://localhost:8081/api/classic
+Content-Type: application/json
+
+{
+  "name": "test",
+  "email": "test@test.com",
+  "phoneNumber": "123456789",
+  "birthDate": ""
+}

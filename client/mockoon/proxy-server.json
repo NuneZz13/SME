@@ -1,0 +1,183 @@
+{
+  "uuid": "edee7014-7762-46ed-ba7f-ffdd0edd30de",
+  "lastMigration": 28,
+  "name": "KForm Tutorial API",
+  "endpointPrefix": "api",
+  "latency": 0,
+  "port": 8081,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "71713dc4-509f-4577-a06e-c3453171dab5",
+      "type": "http",
+      "documentation": "Classic - Submission",
+      "method": "post",
+      "endpoint": "classic",
+      "responses": [
+        {
+          "uuid": "63a58c6c-5827-4e88-b978-f0a3f048685f",
+          "body": "{\n  \"msg\": \"Created user successfully\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id"
+        },
+        {
+          "uuid": "ab4c3529-480b-4639-af0d-e1432fedba05",
+          "body": "{\n  \"msg\": \"[server] Nome obrigatório\",\n  \"fieldError\": \"name\"\n}",
+          "latency": 0,
+          "statusCode": 400,
+          "label": "if name is \"error\"",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "body",
+              "modifier": "name",
+              "value": "error",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id"
+        },
+        {
+          "uuid": "1cd26014-b8a6-440d-bde9-8849efc29243",
+          "body": "{\n  \"msg\": \"[server] Email obrigatório\",\n  \"fieldError\": \"email\"\n}",
+          "latency": 0,
+          "statusCode": 400,
+          "label": "if email is empty",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "body",
+              "modifier": "email",
+              "value": "",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id"
+        },
+        {
+          "uuid": "e3ba6cac-4260-45e0-bef4-57d49bf64a52",
+          "body": "{\n  \"msg\": \"[server] Data obrigatória\",\n  \"fieldError\": \"birthDate\"\n}",
+          "latency": 0,
+          "statusCode": 400,
+          "label": "if birthDate is empty",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "body",
+              "modifier": "birthDate",
+              "value": "",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id"
+        },
+        {
+          "uuid": "547d7922-4574-460f-a7f3-cb9c54a8e021",
+          "body": "{\n  \"msg\": \"[server] Deve começar por 2 ou 9\",\n  \"fieldError\": \"phoneNumber\"\n}",
+          "latency": 0,
+          "statusCode": 400,
+          "label": "if phoneNumber does not start with 2 or 9",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "body",
+              "modifier": "phoneNumber",
+              "value": "/^[^29].*$/",
+              "invert": false,
+              "operator": "regex"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id"
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "71713dc4-509f-4577-a06e-c3453171dab5"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": []
+}

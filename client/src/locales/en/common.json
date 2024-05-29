@@ -1,0 +1,75 @@
+{
+  "mainTitle": "SME",
+  "actions": {
+    "load": "Load",
+    "save": "Save",
+    "validate": "Validate",
+    "submit": "Submit"
+  },
+  "errors": {
+    "loading": {
+      "title": "An error occurred when loading the file",
+      "description": "Please confirm that the correct JSON file has been selected."
+    },
+    "submitting": {
+      "title": "Ocorreu um erro inesperado ao submeter o formulário",
+      "description": "Por favor, volte a tentar mais tarde."
+    }
+  },
+  "submit": "Submit",
+  "valueSubmitted": "Value submitted successfully",
+  "formHasErrors": "Form contains errors",
+  "errorSubmitting": "Error submitting form",
+  "email": {
+    "label": "E-mail",
+    "placeholder": "name@example.com",
+    "required": "E-mail is required.",
+    "invalid": "E-mail is not valid."
+  },
+  "menu": {
+    "chooseLanguage": "Language",
+    "english": "English",
+    "portuguese": "Portuguese",
+    "save": "Save",
+    "submit": "Submit",
+    "noName": "[No name]"
+  },
+  "confirmationDialog": {
+    "title": "Confirm registration",
+    "cancel": "Cancel",
+    "confirm": "Confirm registration"
+  },
+  "toast": {
+    "success": {
+      "title": "Success"
+    },
+    "error": {
+      "client": {
+        "title": "Error from client",
+        "descr": "Field '{{fieldError}}' has error '{{errorMsg}}'",
+        "descrGeneric": "Check fields with errors"
+      },
+      "server": {
+        "title": "Error from server",
+        "descr": "Field '{{fieldError}}' has error '{{errorMsg}}'",
+        "unavailable": "Something went wrong..."
+      }
+    }
+  },
+
+  "legalForm": {
+    "options": {
+      "NATURAL_PERSON": "Natural Person",
+      "PRIVATE_COMPANY": "Private Company",
+      "PUBLIC_LAW_BODY": "Public Law Body"
+    }
+  },
+
+  "select": {
+    "chooseOne": "Select an option..."
+  },
+
+  "table": {
+    "noResults": "No results."
+  }
+}

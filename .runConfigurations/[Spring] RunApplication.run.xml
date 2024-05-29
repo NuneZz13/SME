@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="[Spring] RunApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <module name="SMEFrontEndKform.server.main" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="pt.at.sme.RunApplication" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

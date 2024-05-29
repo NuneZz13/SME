@@ -1,0 +1,19 @@
+@use "at-ui/scss" as at-ui;
+@use "at-ui-kform/scss" as at-ui-kform;
+
+// Error/success pages ========================================================
+
+.error-page,
+.success-page {
+  width: 100%;
+  padding: at-ui.spacing(16) 0;
+  text-align: center;
+}
+
+.error-page {
+  color: at-ui.$red-dark;
+}
+
+.success-page {
+  color: at-ui.$green-dark;
+}

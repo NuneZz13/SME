@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <script th:inline="javascript">
+
+
+        /*<![CDATA[*/
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+
+            let rootElement = document.getElementById("main-container");
+
+
+            console.log("initialValueHtml", /*[[${initialValues}]]*/)
+            ReactDOM.render(
+                <React.StrictMode>
+                    <HelmetProvider>
+                        <AtUiRoot>
+                           <NotificacaoPreviaFormTeste initialValues =/*[[${initialValues}]]*/'' />
+                        </AtUiRoot>
+                    </HelmetProvider>
+                </React.StrictMode>
+                , rootElement
+            )
+        });
+
+        /*]]>*/
+    </script>
+
+    <div class="row" xmlns:th="http://www.w3.org/1999/xhtml">
+        <section class="col-xs-12 col-md-12 main">
+            <div id="main-container"></div>
+        </section>
+    </div>
+</body>
+</html>

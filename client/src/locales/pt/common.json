@@ -1,0 +1,75 @@
+{
+  "mainTitle": "SME",
+  "actions": {
+    "load": "Carregar",
+    "save": "Guardar",
+    "validate": "Validar",
+    "submit": "Submeter"
+  },
+  "errors": {
+    "loading": {
+      "title": "Ocorreu um erro ao carregar o ficheiro",
+      "description": "Por favor confirme que selecionou o ficheiro JSON correto."
+    },
+    "submitting": {
+      "title": "Ocorreu um erro inesperado ao submeter o formulário",
+      "description": "Por favor, volte a tentar mais tarde."
+    }
+  },
+  "submit": "Submeter",
+  "valueSubmitted": "Valor submetido com sucesso:",
+  "formHasErrors": "Formulário tem erros:",
+  "errorSubmitting": "Erro ao submeter o formulário",
+  "email": {
+    "label": "E-mail",
+    "placeholder": "nome@exemplo.com",
+    "required": "E-mail é um campo de preenchimento obrigatório.",
+    "invalid": "E-mail não é válido."
+  },
+  "menu": {
+    "chooseLanguage": "Idioma",
+    "english": "Inglês",
+    "portuguese": "Português",
+    "save": "Guardar",
+    "submit": "Submeter",
+    "noName": "[Sem nome]"
+  },
+  "confirmationDialog": {
+    "title": "Confirme o registo",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar o registo"
+  },
+  "toast": {
+    "success": {
+      "title": "Sucesso"
+    },
+    "error": {
+      "client": {
+        "title": "Erro de cliente",
+        "descr": "Campo '{{fieldError}}' com erro '{{errorMsg}}'",
+        "descrGeneric": "Verifica os campos com erro"
+      },
+      "server": {
+        "title": "Erro de servidor",
+        "descr": "Campo '{{fieldError}}' com erro '{{errorMsg}}'",
+        "unavailable": "Alguma coisa correu mal..."
+      }
+    }
+  },
+
+  "legalForm": {
+    "options": {
+      "NATURAL_PERSON": "Pessoa Natural",
+      "PRIVATE_COMPANY": "Empresa Privada",
+      "PUBLIC_LAW_BODY": "Organismo De Direito Público"
+    }
+  },
+
+  "select": {
+    "chooseOne": "Selecione uma opção..."
+  },
+
+  "table": {
+    "noResults": "Sem resultados."
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "doc": {
+    "title": "Notificação Prévia",
+    "descr": "Notificação Previa"
+  },
+  "identification": {
+    "title": "Identificação",
+    "vatIdentificationNumber": {
+      "label": "Número de Identificação Fiscal",
+      "issueMessages": {
+        "notEmpty": "O Número de Identificação Fiscal é de preenchimento obrigatório.",
+        "disallowedValue": "O código do estado membro é inválido."
+      }
+    },
+    "name": {
+      "label": "Nome do sujeito passivo",
+      "issueMessages": {
+        "notEmpty": "O nome do sujeito passivo é de preenchimento obrigatório."
+      }
+    },
+    "activityType": {
+      "label": "Tipo de atividade",
+      "issueMessages": {
+        "minSize": "Tem de selecionar pelo menos um tipo de atividade."
+      }
+    },
+    "legalForm": {
+      "label": "Forma Jurídica",
+      "issueMessages": {
+        "notEmpty": "A forma jurídica é de preenchimento obrigatório.",
+        "disallowedValue": "Selecione um valor válido de forma jurídica."
+      }
+    },
+    "hasOSSRegistration": {
+      "label": "Está registado no regime união do OSS?",
+      "issueMessages": {
+        "ossNumberFilledAndCheckBoxHasRegisteredInOSSNotChecked": "Se indicou um o seu identificador no regime union do OSS, deverá confirmar este campo."
+      }
+    },
+    "ossNumber": {
+      "label": "Se sim, indique qual é o seu identificador no regime union do OSS.",
+      "issueMessages": {
+        "ossNumberMandatoryIfHasRegisteredInOSS": "Se indicou que possui um identificador no regime union do OSS, tem de indicar qual."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contactos",
+    "street": {
+      "label": "Rua",
+      "issueMessages": {
+        "notEmpty": "A rua é de preenchimento obrigatório."
+      }
+    },
+    "number": {
+      "label": "Número",
+      "issueMessages": {
+        "notEmpty": "O número é de preenchimento obrigatório."
+      }
+    },
+    "postCode": {
+      "label": "Código Postal",
+      "issueMessages": {
+        "notEmpty": "O código postal é de preenchimento obrigatório."
+      }
+    },
+    "city": {
+      "label": "Cidade",
+      "issueMessages": {
+        "notEmpty": "A cidade é de preenchimento obrigatório."
+      }
+    },
+    "country": {
+      "label": "País",
+      "issueMessages": {
+        "notEmpty": "O país é de preenchimento obrigatório.",
+        "disallowedValue": "Selecione um país válido."
+      }
+    },
+    "phoneNumber": {
+      "label": "Número de Telefone",
+      "issueMessages": {
+        "match": "O número de telefone é inválido."
+      }
+    },
+    "emailAddress": {
+      "label": "Endereço de Email",
+      "issueMessages": {
+        "invalidEmail": "O endereço de email é inválido."
+      }
+    },
+    "websites": {
+      "label": "Website(s)",
+      "addValue": "Adicionar Website",
+      "issueMessages": {
+        "notEmpty": "Por favor indique o URL website.",
+        "match": "O website é inválido."
+      }
+    }
+  },
+  "memberStatesOfExemption": {
+    "title": "Estado(s)-Membro(s) em que pretende beneficiar da isenção",
+    "label": "Estado(s) Membro(s) de isenção",
+    "addValue": "Adicionar outro Estado Membro",
+    "memberState": "Estado Membro",
+    "issueMessages": {
+      "minSize": "Tem de indicar pelo menos um estado onde pretende beneficiar da isenção.",
+      "repeatedElements": "Não são permitidos valores repetidos."
+    }
+  },
+  "TotalValueOfSuppliesByTaxablePerson": {
+    "title": "Valor total das entregas efetuadas pelo sujeito passivo",
+    "currCalendar": {
+      "label": "Valor total dos fornecimentos realizados durante o ano civil em curso",
+      "issueMessages": {
+        "minSize": "Tem de indicar fornecimentos pelo menos para um estado membro.",
+        "disallowedValue": "O código do estado membro é inválido."
+      }
+    },
+    "prevCalendar": {
+      "label" : "Valor total dos fornecimentos realizados no ano civil anterior",
+      "issueMessages": {
+        "disallowedValue": "O código do estado membro é inválido."
+      }
+    },
+    "priorYearToPrevCalendar": {
+      "label" : "Valor total dos fornecimentos realizados durante o ano civil anterior ao ano civil anterior",
+      "issueMessages": {
+        "disallowedValue": "O código do estado membro é inválido."
+      }
+    }
+  },
+  "identifiedInOtherMS": {
+    "label" : "Declaro que ainda não estou identificado por um número individual noutro Estado-Membro estabelecimento para a aplicação da isenção nos termos do artigo 284.º, n.º 3, alínea b), da Diretiva 2006/112/CE."
+  },
+  "common": {
+    "totalSuppliesTable" : {
+      "memberState": "Estado Membro",
+      "total": "Total",
+      "addValue": "Adicionar outro Estado Membro",
+      "issueMessages": {
+        "disallowedValue": "Selecione um Estado Membro válido.",
+        "min": "O valor do total de fornecimentos tem de ser superior a 0.",
+        "repeatedElements": "Não são permitidos valores repetidos para o Estado Membro.",
+        "portugalNotExistsOnTable": "Tem de indicar os seus fornecimentos para Portugal."
+      }
+    }
+  }
+}
+

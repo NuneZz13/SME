@@ -1,0 +1,144 @@
+{
+  "doc": {
+    "title": "Prior Notification",
+    "descr": "Prior Notification"
+  },
+  "identification": {
+    "title": "Identification",
+    "vatIdentificationNumber": {
+      "label": "VAT Identifcation Number",
+      "issueMessages": {
+        "notEmpty": "The VAT Identifcation Number is mandatory."
+      }
+    },
+    "name": {
+      "label": "Taxable person name",
+      "issueMessages": {
+        "notEmpty": "The Taxable person name is mandatory."
+      }
+    },
+    "activityType": {
+      "label": "Activity type",
+      "issueMessages": {
+        "notEmpty": "The activity type is mandatory."
+      }
+    },
+    "legalForm": {
+      "label": "Legal Form",
+      "issueMessages": {
+        "notEmpty": "The legal form is mandatory.",
+        "disallowedValue": "Value not allowed for legal form field."
+      }
+    },
+    "hasOSSRegistration": {
+      "label": "Are you registered in OSS Union special scheme?",
+      "issueMessages": {
+        "ossNumberFilledAndCheckBoxHasRegisteredInOSSNotChecked": "If you indicated your identifier in OSS Union special scheme, you must confirm this field."
+      }
+    },
+    "ossNumber": {
+      "label": "If yes, what is your identifer in OSS Union scheme?",
+      "issueMessages": {
+        "ossNumberMandatoryIfHasRegisteredInOSS": "If it is indicated that you have an identifier in OSS Union special scheme, you must indicate which one"
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "street": {
+      "label": "Street ",
+      "issueMessages": {
+        "notEmpty": "The street is mandatory."
+      }
+    },
+    "number": {
+      "label": "Number",
+      "issueMessages": {
+        "notEmpty": "The number is mandatory."
+      }
+    },
+    "postCode": {
+      "label": "Post Code",
+      "issueMessages": {
+        "notEmpty": "The post code is mandatory."
+      }
+    },
+    "city": {
+      "label": "City",
+      "issueMessages": {
+        "notEmpty": "The city is mandatory."
+      }
+    },
+    "country": {
+      "label": "Country",
+      "issueMessages": {
+        "notEmpty": "The country is mandatory.",
+        "disallowedValue": "Code of country is invalid."
+      }
+    },
+    "phoneNumber": {
+      "label": "Telephone Number",
+      "issueMessages": {
+        "match": "The telephone number is mandatory"
+      }
+    },
+    "emailAddress": {
+      "label": "Email address",
+      "issueMessages": {
+        "invalidEmail": "The email address is invalid"
+      }
+    },
+    "websites": {
+      "label": "Website(s)",
+      "addValue": "Add Website"
+    }
+  },
+  "memberStatesOfExemption": {
+    "title": "Member State(s) in which you intend to avail yourself of exemption",
+    "label": "Member State(s) of exemption",
+    "addValue": "Add other Member State",
+    "memberState": "Member State",
+    "issueMessages": {
+      "minSize": "You must indicate at least one state where you want to benefit from the exemption.",
+      "disallowedValue": "The exemption member state code is invalid.",
+      "repeatedElements": "Repeated values are not allowed."
+    }
+  },
+  "TotalValueOfSuppliesByTaxablePerson": {
+    "title": "Total value of supplies carried out by the taxable person",
+    "currCalendar": {
+      "label": "Total value of supplies carried out during the current calendar year",
+      "issueMessages": {
+        "minSize": "TODO",
+        "disallowedValue": "The member state code is invalid."
+
+      }
+    },
+    "prevCalendar": {
+      "label" : "Total value of supplies carried out during the previous calendar year",
+      "issueMessages": {
+        "minSize": "TODO",
+        "disallowedValue": "The member state code is invalid."
+      }
+    },
+    "priorYearToPrevCalendar": {
+      "label" : "Total value of supplies carried out during the calendar year prior to previous calendar year",
+      "issueMessages": {
+        "minSize": "TODO",
+        "disallowedValue": "The member state code is invalid."
+      }
+    }
+  },
+  "identifiedInOtherMS": {
+    "label" : "By ticking this box, I declare that I am not already identifed by an individual number in another Member State of establishment for the application of the exemption pursuant to Article 284 (3)(b) of Directive 2006/112/EC."
+  },
+  "common": {
+    "totalSuppliesTable" : {
+      "memberState": "Member State",
+      "total": "Total",
+      "addValue": "Add other Member State"
+
+    }
+  }
+}
+
