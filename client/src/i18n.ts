@@ -5,12 +5,12 @@ import { initReactI18next } from 'react-i18next';
 //Importar traduções
 import common_en from './locales/en/common.json';
 import errorPage_en from './locales/en/errorPage.json';
-import kform_en from './locales/en/notificaoPreviaForm.json';
+import kform_en from './locales/en/notificacaoPreviaForm.json';
 import successPage_en from './locales/en/successPage.json';
 
 import common_pt from './locales/pt/common.json';
 import errorPage_pt from './locales/pt/errorPage.json';
-import kform_pt from './locales/pt/notificaoPreviaForm.json';
+import kform_pt from './locales/pt/notificacaoPreviaForm.json';
 import successPage_pt from './locales/pt/successPage.json';
 
 
